@@ -2,7 +2,7 @@
 Simple Session Management PHP
 Index.php
 Contains simple login form and session.
-<code><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<xmp><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -34,11 +34,11 @@ alert('<?php echo $_GET['msg']; ?>');
 </script>
 </body>
 </html>
-</code>
+</xmp>
 
 logging.php
 which contains session and login authentication
-<code><?php
+<xmp><?php
 ob_start();
 if(isset($_POST['submit'])){
 $username = trim($_POST['username']);
@@ -52,10 +52,10 @@ $password = trim($_POST['password']);
 	}
 }
 ?>
-  </code>
+  </xmp>
   
   Logout.php
-  <code>
+  <xmp>
   <?php
 session_start();
 if(isset($_SESSION['name'])){
@@ -64,4 +64,4 @@ session_destroy();
 header("Location: index.php?msg=Loggedout successfully");
 }
 ?>
-  </code>
+  </xmp>
